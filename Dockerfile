@@ -1,5 +1,5 @@
 FROM debian:11-slim
-MAINTAINER steef@debruijn.ws
+MAINTAINER gtunes-dev
 
 RUN apt-get update \
         && apt-get -y upgrade \
