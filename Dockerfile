@@ -1,5 +1,7 @@
-FROM debian:stable-slim
-MAINTAINER gtunes-dev
+#docker build -t gtunesdev/docker-roonserver . --no-cache=true
+
+FROM --platform=amd64 debian:stable-slim
+LABEL org.opencontainers.image.authors="gTunesDev"
 
 RUN apt-get update \
         && apt-get -y upgrade \
